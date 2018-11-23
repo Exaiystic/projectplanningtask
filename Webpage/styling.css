@@ -2,9 +2,13 @@
 
 /* B L U R R E D  B A C K G R O U N D */
 /* https://www.w3schools.com/howto/howto_css_blurred_background.asp */
-/* Take a look at the below, it might help with trying to recreate a blurred background */
-/* https://paper-leaf.com/blog/2016/01/creating-blurred-background-using-only-css/ */
+/* You've got a blurred background now, however, should you need to revise 
+   the features you can take a loot at the link above. */
 
+/* Overflow hidden means that any elements that extend past the resolution of the web page will be cut out, this is used 
+   in order to compensate for the blurred glowing edges of the background - by scaling the image to 110% we can have the 
+   excess glow as overflow, which we can then hide. By setting the height of the body to 100%, everything within the body 
+   will be in front of the background image. */
 body, html {
 	height: 100%;
 	margin: 0;
@@ -41,7 +45,7 @@ body, html {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 2;
+	z-index: 2; /*  z-index is used in order to determine how high up the element is, as if it was a layer in photoshop. */
 	width: 80%;
 	padding: 20px;
 	text-align: center;
