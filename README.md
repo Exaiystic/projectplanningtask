@@ -25,7 +25,9 @@ Added unblurred background image underneath blurred background to counter vignet
 #### About us
 About us page created.
 
-styled and set up in universal theme.
+Styled and set up in universal theme.
+
+Added basic navbar.
 
 ## KNOWN ISSUES IN CURRENT VERSION:
 
