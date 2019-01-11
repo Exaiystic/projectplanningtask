@@ -7,6 +7,7 @@ Repository for storing project files including HTML files, CSS files and Images.
 ## UPDATE LOG:
 
 #### 11/01/2019
+### Homepage
 Added the project specifications to the repository file.
 
 Added two more buttons.
@@ -21,10 +22,14 @@ Adjusted page overflow to enable scrolling.
 
 Added unblurred background image underneath blurred background to counter vignette around the window edges.
 
+### About us
+About us page created.
+
+styled and set up in universal theme.
 
 ## KNOWN ISSUES IN CURRENT VERSION:
 
 Background partially scrolls with web page despite background: fixed and position: static being in 
-the source code. This is believed to be because of the scale transition used in order to hide the vignette via hidden overflow. Removing the overflow altogether fixes the problem but lowers the background quality due to the clear background behind the blurred one. Fix needed.
+the source code. This is believed to be because of the scale transition used in order to hide the vignette via hidden overflow. Removing the overflow altogether fixes the problem but lowers the background quality due to the clear background behind the blurred one. Fix needed. (ALL PAGES)
 
-When the hover over overlay is triggered, the introduction text sometimes flickers upwards, then downwards when the hover over is no longer active. Reason unknown. Fix needed.
+When the hover over overlay is triggered, the introduction text sometimes flickers upwards, then downwards when the hover over is no longer active. Reason unknown. Fix needed. (HOMEPAGE)
