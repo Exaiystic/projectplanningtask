@@ -4,9 +4,9 @@
 Repository for storing project files including HTML files, CSS files and Images.
 
 
-### UPDATE LOG:
+## UPDATE LOG:
 
-##### 11/01/2019
+#### 11/01/2019
 Added the project specifications to the repository file.
 
 Added two more buttons.
