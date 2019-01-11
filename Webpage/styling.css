@@ -32,6 +32,7 @@ body, html {
   font-family: segoe ui, segoe ui light, sans-serif;
   font-size: 20px;
   text-align: center;
+  position: static;
 }
 
 * {
@@ -51,7 +52,19 @@ body, html {
   background-attachment: fixed;
   background-size: cover;
   transform: scale(1.1);
+  position: static;
+}
+
+.vignette-disable {
+  background-image: url("Photos/photog_img23.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  transform: scale(1.1);
   overflow: hidden;
+  position: static;
 }
 
 .wrapper {
