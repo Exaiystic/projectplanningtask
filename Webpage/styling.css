@@ -29,7 +29,7 @@ body, html {
 }
 
 .bg-image {
-  background-image: url("photog_img23.jpg");
+  background-image: url("Photos/photog_img23.jpg");
   filter: blur(8px);
   -webkit-filter: blur(8px);
   height: 100%;
