@@ -4,7 +4,7 @@
 Repository for storing project files including HTML files, CSS files and Images.
 
 
-U P D A T E  L O G:
+### UPDATE LOG:
 
 ##### 11/01/2019
 Added the project specifications to the repository file.
@@ -12,3 +12,5 @@ Added the project specifications to the repository file.
 Added two more buttons.
 
 Added hover over fade effect.
+
+Added introduction to homepage
