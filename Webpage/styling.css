@@ -7,6 +7,19 @@
    the features you can take a loot at the link above. 
 */
 
+/*  Google fonts available:  */
+/*  
+    Lato
+	Monsterrat
+	Noto Sans
+	Open Sans
+	Roboto
+	Roboto Condensed
+	Sarabun
+	Source Sans Pro
+	Staatliches
+*/
+
 /*
   Overflow hidden means that any elements that extend past the resolution of the web page will be cut out, this is used 
    in order to compensate for the blurred glowing edges of the background - by scaling the image to 110% we can have the 
@@ -16,9 +29,9 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: segoe ui, segoe ui light;
+  font-family: segoe ui, segoe ui light, sans-serif;
+  font-size: 20px;
   text-align: center;
-  overflow: hidden;
 }
 
 * {
@@ -38,6 +51,7 @@ body, html {
   background-attachment: fixed;
   background-size: cover;
   transform: scale(1.1);
+  overflow: hidden;
 }
 
 .wrapper {
@@ -148,6 +162,11 @@ h1 {
 .content-details p{
   color: #fff;
   font-size: 0.8em;
+  font-family: segoe ui, sans-serif;
+}
+
+.overlay-header {
+  font-family: segoe ui, sans-serif;
 }
 
 .fadeIn-top{
