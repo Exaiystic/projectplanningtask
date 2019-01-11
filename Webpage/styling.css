@@ -191,4 +191,5 @@ h1 {
 
 #page-introduction {
   margin: 0px 0px 25px 0px;
+  z-index: 10;
 }
