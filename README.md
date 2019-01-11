@@ -6,8 +6,8 @@ Repository for storing project files including HTML files, CSS files and Images.
 
 ## UPDATE LOG:
 
-#### 11/01/2019
-### Homepage
+### 11/01/2019
+#### Homepage
 Added the project specifications to the repository file.
 
 Added two more buttons.
@@ -22,7 +22,7 @@ Adjusted page overflow to enable scrolling.
 
 Added unblurred background image underneath blurred background to counter vignette around the window edges.
 
-### About us
+#### About us
 About us page created.
 
 styled and set up in universal theme.
