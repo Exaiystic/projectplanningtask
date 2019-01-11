@@ -17,9 +17,11 @@
       DIV for any content that is outside of the main content wrapper. This will mostly be used
       for displaying the text 'Laughton-en-le-Morthen Parish Council' as a header.
     -->
-    <div class="bg-header">
-      <h1>Laughton-en-le-Morthen Parish Council</h1>
-    </div>
+	
+	<!--Below header has scalability issues as of right now.-->
+    <!--<div class="bg-header">
+      <h1 style="position: absolute">Laughton-en-le-Morthen Parish Council</h1>
+    </div>-->
 		
     <!--
       DIV for the main content. It creates a wrapper around the content in order to create a 
@@ -29,8 +31,18 @@
       that will lead the user to the web pages branching off the hub (this page). 
     -->
     <div class="wrapper">
-      <h1>Home</h1>
+      <h1 id="page-header">Laughton-en-le-Morthen</h1>
+	  <h2>Home</h2>
       <br>
+	  
+	  <p id="page-introduction">
+	    Please see the News and Events page for Laughton-en-le-Morthen Parish Council's privacy policy. <br><br>
+		Welcome! <br>
+		Laughton-en-le-Morthen Parish Council serves the village of Laughton-en-le-Morthen along with the hamlets of 
+		Brookhouse, Slade Hooton, Carr and Newhall. Laughton-en-le-Morthen is a small dormitory village and civil 
+		parish in the metropolitan borough or Rotherham, lying to the sourht of Rotherham, South Yorkshire. <br><br>
+		Click on the images below to navigate the website.
+	  </p>
 			
 	  <!-- Row one -->
       <div class="row">
@@ -48,7 +60,7 @@
         <div class="column">
           <div class="content">
             <div class="content-overlay"></div>
-            <img class="content-image" src="Photos/photog_img27.jpg" style="width:100%">
+            <img class="content-image" src="Photos/photog_img8.jpg" style="width:100%">
             <div class="content-details fadeIn-top">
               <h3>History</h3>
             </div>
@@ -83,7 +95,7 @@
         <div class="column">
           <div class="content">
             <div class="content-overlay"></div>
-            <img class="content-image" src="Photos/photog_img8.jpg" style="width:100%">
+            <img class="content-image" src="Photos/photog_img27.jpg" style="width:100%">
             <div class="content-details fadeIn-top">
               <h3>Contact Us</h3>
             </div>
