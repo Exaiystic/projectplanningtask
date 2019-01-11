@@ -13,4 +13,8 @@ Added two more buttons.
 
 Added hover over fade effect.
 
-Added introduction to homepage
+Added introduction to homepage.
+
+Adjusted font styling for easier readability.
+
+Adjusted page overflow to enable scrolling.
