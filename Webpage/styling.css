@@ -52,7 +52,6 @@ body, html {
   background-attachment: fixed;
   background-size: cover;
   transform: scale(1.1);
-  position: static;
 }
 
 .vignette-disable {
@@ -63,8 +62,6 @@ body, html {
   background-attachment: fixed;
   background-size: cover;
   transform: scale(1.1);
-  overflow: hidden;
-  position: static;
 }
 
 .wrapper {
@@ -78,8 +75,11 @@ body, html {
   transform: translate(-50%, -50%);
   z-index: 2; /*  z-index is used in order to determine how high up the element is, as if it was a layer in photoshop. */
   width: 80%;
+  max-width: 850px;
   padding: 20px;
   text-align: center;
+  margin-top: 100px;
+  margin: auto;
 }
 
 .bg-header {
@@ -105,7 +105,7 @@ h1 {
 }
 
 .column {
-  flex: 33.33%;
+  justify-content: flex-start;
   padding: 5px;
   overflow: hidden;
 }
