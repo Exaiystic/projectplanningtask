@@ -28,10 +28,3 @@ About us page created.
 Styled and set up in universal theme.
 
 Added basic navbar.
-
-## KNOWN ISSUES IN CURRENT VERSION:
-
-Background partially scrolls with web page despite background: fixed and position: static being in 
-the source code. This is believed to be because of the scale transition used in order to hide the vignette via hidden overflow. Removing the overflow altogether fixes the problem but lowers the background quality due to the clear background behind the blurred one. Fix needed. (ALL PAGES)
-
-When the hover over overlay is triggered, the introduction text sometimes flickers upwards, then downwards when the hover over is no longer active. Reason unknown. Fix needed. (HOMEPAGE)
