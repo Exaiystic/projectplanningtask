@@ -28,3 +28,6 @@ About us page created.
 Styled and set up in universal theme.
 
 Added basic navbar.
+
+### 18/01/2019
+Adjusted wrapper and background positioning to temporarily fix top from being cut off.
