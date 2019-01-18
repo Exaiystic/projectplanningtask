@@ -1,107 +1,81 @@
 <!DOCTYPE html>
-<!-- Laughton-en-le-Morthen Parish Council homepage. Made by Thomas Broughton -->
+<!-- Homepage -->
+
 <html>
   <body>
     <head>
-      <!--
-        Setting up the web page aesthetics by importing an external style sheet,
-        giving the web page tab a title, as well as adding resolution scalability 
-        for mobile screens, etc. 
-      -->
-	  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Noto+Sans|Open+Sans|PT+Sans|Roboto|Roboto+Condensed|Sarabun|Source+Sans+Pro|Staatliches" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="styling.css"/>
-      <title>Home</title>
+      <link rel="stylesheet" type="text/css" href="styling.css"/> <!-- Importing styling from external file -->
+      <title>Home</title> <!-- Name of title shown in browser tab -->
     </head>
 		
-    <!--
-      DIV for the main content. It creates a wrapper around the content in order to create a 
-      contrast medium against the background. 
-
-      As this page is the hub for the website, this page in particular will have styled buttons 
-      that will lead the user to the web pages branching off the hub (this page). 
-    -->
-    <div class="wrapper">
-      <h1 class="page-header">Laughton-en-le-Morthen</h1>
-	  <h2>Home</h2>
-      <br>
-	  
-	  <p class="page-introduction">
-	    Please see the News and Events page for Laughton-en-le-Morthen Parish Council's privacy policy. <br><br>
-		Welcome! <br>
-		Laughton-en-le-Morthen Parish Council serves the village of Laughton-en-le-Morthen along with the hamlets of 
-		Brookhouse, Slade Hooton, Carr and Newhall. Laughton-en-le-Morthen is a small dormitory village and civil 
-		parish in the metropolitan borough or Rotherham, lying to the sourht of Rotherham, South Yorkshire. <br><br>
-		Click on the images below to navigate the website.
-	  </p>
+    <div id="wrapper"> <!-- Element which will hold all the main content -->
+	    <h1>Laughten-en-le-Morthen</h1>
+		<h2>Home</h2>
+		<p>
+		    Welcome! <br>
+			Laughton-en-le-Morthen Parish Council serves the village of Laughton-en-le-Morthen 
+			along with the hamlets of Brookhouse, Slade Hooton, Carr and Newhall. 
+			Laughton-en-le-Morthen is a small dormitory village and civil parish in the 
+			metropolitan borough or Rotherham, lying to the south of Rotherham, South Yorkshire. <br>
+			Click on the images below to navigate the website.
+		</p>
+		
+		<div class="row"> <!-- Image buttons layed out as if a table --> <!-- Row one -->
+		    <div class="column"><a href="About Us.html"> <!-- Links button to about page -->
+			    <div class="content"> <!-- Container for button image/overlay effect -->
+				    <div class="content-overlay"></div> <!-- Overlay effect (see styling)-->
+					<img class="content-image" src="Photos/photog_img28.jpg" style="width: 100%"></img> <!-- Button image -->
+					<div class="content-details fadeIn-top"> <!-- Container for overlay content -->
+					    <h3>History</h3>
+					</div>
+				</div>
+			</div></a> <!-- The entire button is a link, which is why <a> tag is closed here -->
 			
-	  <!-- Row one -->
-      <div class="row">
-	  
-        <div class="column"><a href="About Us.html">
-          <div class="content">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="Photos/photog_img28.jpg" style="width:100%">
-            <div class="content-details fadeIn-top">
-              <h3 class="overlay-header">About us</h3>
-            </div>
-          </div>
+			<div class="column"><a>
+			    <div class="content">
+				    <div class="content-overlay"></div>
+					<img class="content-image" src="Photos/photog_img8.jpg" style="width: 100%"></img>
+					<div class="content-details fadeIn-top">
+					    <h3>History</h3>
+					</div>
+			    </div>
+			</div></a>
+			
+			<div class="column"><a>
+			    <div class="content">
+				    <div class="content-overlay"></div>
+					<img class="content-image" src="Photos/photog_img25.jpg" style="width: 100%"></img>
+					<div class="content-details fadeIn-top">
+					    <h3>News & Events</h3>
+					</div>
+			</div></a>
+		</div>
+	</div>
+	
+	<div class="row"> <!-- Row two -->
+	
+	    <div class="column"><a>
+		    <div class="content">
+			    <div class="content-overlay"></div>
+				<img class="content-image" src="Photos/photog_img10.jpg" style="width: 100%"></img>
+				<div class="content-details fadeIn-top">
+				    <h3>Village Hall & Allotments</h3>
+				</div>
+			</div>
 		</div></a>
 		
-        <div class="column">
-          <div class="content">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="Photos/photog_img8.jpg" style="width:100%">
-            <div class="content-details fadeIn-top">
-              <h3>History</h3>
-            </div>
-          </div>
-		</div>
+		<div class="column"><a>
+		    <div class="content">
+			    <div class="content-overlay"></div>
+				<img class="content-image" src="Photos/photog_img27.jpg" style="width: 100%"></img>
+				<div class="content-details fadeIn-top">
+				    <h3>Contact Us</h3>
+				</div>
+			</div>
+		</div></a>
 		
-        <div class="column">
-          <div class="content">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="Photos/photog_img25.jpg" style="width:100%">
-            <div class="content-details fadeIn-top">
-              <h3>News & Events</h3>
-            </div>
-          </div>
-		</div>
-		
-      </div>
-	  
-	  <!-- Row two -->
-      <div class="row">
-	  
-        <div class="column">
-          <div class="content">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="Photos/photog_img10.jpg" style="width:100%">
-            <div class="content-details fadeIn-top">
-              <h3>Village Hall & Allotments</h3>
-            </div>
-          </div>
-		</div>
-		
-        <div class="column">
-          <div class="content">
-            <div class="content-overlay"></div>
-            <img class="content-image" src="Photos/photog_img27.jpg" style="width:100%">
-            <div class="content-details fadeIn-top">
-              <h3>Contact Us</h3>
-            </div>
-          </div>
-		</div>
-		
-		
-      </div>
-	  
-    </div>
-    	
-    <!--<div class="bg-image"/>-->
-	<div class="vignette-disable">
-	  <div class="bg-image"/>
 	</div>
-    		
+	
   </body>
 </html>

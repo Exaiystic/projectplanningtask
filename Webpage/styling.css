@@ -1,193 +1,84 @@
-/* CSS starts here */
-
-/* B L U R R E D  B A C K G R O U N D */
-/* https://www.w3schools.com/howto/howto_css_blurred_background.asp
-
-  You've got a blurred background now, however, should you need to revise 
-   the features you can take a loot at the link above. 
-*/
-
-/*  Google fonts available:  */
-/*  
-    Lato
-	Monsterrat
-	Noto Sans
-	Open Sans
-	Roboto
-	Roboto Condensed
-	Sarabun
-	Source Sans Pro
-	Staatliches
-*/
-
-/*
-  Overflow hidden means that any elements that extend past the resolution of the web page will be cut out, this is used 
-   in order to compensate for the blurred glowing edges of the background - by scaling the image to 110% we can have the 
-   excess glow as overflow, which we can then hide. By setting the height of the body to 100%, everything within the body 
-   will be in front of the background image. 
-*/
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: segoe ui, segoe ui light, sans-serif;
-  font-size: 20px;
-  text-align: center;
-  position: static;
-}
-
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
+	margin: 0px;
+	padding: 0px;
 }
 
-.bg-image {
-    background-image: url(Photos/photog_img23.jpg);
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    height: 140%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
+body {
+	height: 100px;
+	font-family: segoe ui, segoe ui light, sans-serif;
+	font-size: 20px;
+	text-align: center;
 }
 
-.vignette-disable {
-  background-image: url("Photos/photog_img23.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  transform: scale(1.1);
-}
-
-.wrapper {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2; /*  z-index is used in order to determine how high up the element is, as if it was a layer in photoshop. */
-  width: 80%;
-  max-width: 850px;
-  padding: 20px;
-  text-align: center;
-  margin-top: 100px;
-  margin: auto;
-}
-
-.bg-header {
-  text-align: center;
-  margin: 10% 0% 5% 0%;
-  width: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  z-index: 2;
-  color: white;
+#wrapper {
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+	color: white; /* Colour of text in element */
+	border: 3px solid #f1f1f1; /* Border thickness/stroke type/colour */
+	max-width: 850px; /* Maximum width of the wrapper */
+	width: 80%; /* Width of wrapper (if 80% of window size is not bigger than 850 pixels) */
+	margin: 0px auto; /* Centering the wrapper to the middle of the window */
 }
 
 h1 {
-  text-align: center;
-  font-weight: bold;
+	text-align: center; /* Centers header text */
+	font-weight: bold; /* Makes header text bold */
 }
 
 .row {
-  display: flex;
-  overflow: hidden; /*Overflow hidden can be used when blurring images - when the image
-						is scaled the excess is hidden, which can help conceal the blurred edges. */
+	display: flex; /* Scalable container (the row) and items (the columns) */
 }
 
 .column {
-  justify-content: flex-start;
-  padding: 5px;
-  overflow: hidden;
+	justify-content: flex-start; /* Items on a new row are moved to start */
+	padding: 5px; /* Space between columns */
+	overflow: hidden; /* Hides elements exceeding boundaries */
 }
 
 .content {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
-  overflow: hidden;
+	position: relative; /* Positions content based on it's normal position */
+	width: 100%; /* Content fills up 100% of parent's spacing (up to 400 pixels) */
+	max-width: 400px; /* Content not allowed to exceed 400px */
+	margin: auto; /* The space between elements is automatically decided */
+	overflow: hidden; /* Hides elements exceeding boundaries */
 }
 
 .content .content-overlay {
-  background: rgba(0,0,0,0.7);
-  position: absolute;
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+    background: rgba(0,0,0,0.7); /* Sets background to opaque black */
+    position: absolute; /* Positions overlay relative to parent (over the container) */
+    height: 99%; /* Sets height to 99% of parent height */
+    width: 100%; /* Sets width to 100% of parent width */
+    left: 0; /* Item not offset by 0 pixels left */
+    top: 0; /* Item not offset by 0 pixels top */
+    bottom: 0; /* Item not offset by 0 pixels bottom */
+    right: 0; /* Item not offset by 0 pixels right */
+    opacity: 0; /* Sets opacity to 0 */
+    -webkit-transition: all 0.4s ease-in-out 0s; /* Element transition times in and out set to 0.4s and 0s respectively*/
+    -moz-transition: all 0.4s ease-in-out 0s; /* Element transition times in and out set to 0.4s and 0s respectively*/
+    transition: all 0.4s ease-in-out 0s; /* Element transition times in and out set to 0.4s and 0s respectively*/
 }
 
-.content:hover .content-overlay{
-  opacity: 1;
+.content:hover .content-overlay{ /* Triggers when mouse hovers over element */
+  opacity: 1; /* Makes object 100% visible */
 }
 
-.content-image{
-  width: 100%;
+.content-image {
+	width: 100%;
 }
 
 .content-details {
-  position: absolute;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
-
-.content:hover .content-details{
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-}
-
-.content-details h3{
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-
-.content-details p{
-  color: #fff;
-  font-size: 0.8em;
-  font-family: segoe ui, sans-serif;
-}
-
-.overlay-header {
-  font-family: segoe ui, sans-serif;
-}
-
-.fadeIn-top{
-  top: 20%;
-}
-
-.page-header {
-}
-
-.page-introduction {
-  margin: 0px 0px 25px 0px;
-  z-index: 10;
+	position: absolute; /* Positions overlay relative to parent (over the container) */
+	text-align: center; /* Aligns text in elements to center */
+	padding-left: 1em; /* Sets distance between content and left border of element to 1 times the font size of content */
+	padding-right: 1em; /* Sets distance between content and right border of element to 1 times the font size of content */
+	width: 100%; /* Sets width to 100% of it's element */
+	top: 50%; /* Specifies that content starts 50% down from the top */
+	left: 50%; /* Specifies that content starts 50% right from the left */
+	opacity: 0; /* Sets content details invisible*/
+    -webkit-transform: translate(-50%, -50%); /* Centers content */
+    -moz-transform: translate(-50%, -50%); /* Centers content */
+    transform: translate(-50%, -50%); /* Centers content */
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
 }
