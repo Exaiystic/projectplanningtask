@@ -13,7 +13,7 @@ body {
 	text-align: center; /* Sets the default text alignment */
 	
 /* Setting the body to fill the entire window */
-    height: 100px;
+    height: 100%;
 	margin: 0px;
 	padding: 0px;
 }
@@ -23,8 +23,12 @@ body {
 	overflow: hidden; /* Hides enlarged background image that exceeds window size (due to body height being 100%) */
 }
 
-#bg-container {
-	/* Background creation and adjustment */
+/***************************************************************************************/
+/* Background images */
+/* Background images have to be separated because each page has a different background */
+
+#bg-container-homepage {
+	/* Background adjustment and creation*/
 	background-image: url("Photos/photog_img23.jpg"); /* Sets image in directory as background */
 	filter: blur(10px); /* Blurs background by ten pixels */
 	background-repeat: no-repeat; /* Background will not repeat if not big enough */
@@ -40,6 +44,22 @@ body {
 	z-index: -100; /* Sets the layer arrangement of layer to be at level -100 (below everything) */
 	transform: scale(1.1); /* Enlarges blurred image to get rid of edge of window glowing (due to the blur) */
 }
+
+#bg-container-aboutus {
+	background-image: url("Photos/photog_img28.jpg");
+	filter: blur(10px);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: -100;
+	transform: scale(1.1);
+}
+
+/***************************************************************************************/
 
 #wrapper-container {
 	padding: 10% 0% 10% 0%; /* Distances wrapper from top of window (wrapper margin used for alignment) */
@@ -98,7 +118,7 @@ h1 {
 }
 
 .content-image {
-	width: 100%;
+	width: 100%; /* Sets the image to fill 100% of container */
 }
 
 .content-details {
@@ -144,4 +164,12 @@ h1 {
 
 .fadeIn-top {
 	top: 20%; /* Forces overlay to transition from the top of the button into the center */
+}
+
+#backButton {
+	margin: 5%; /* Gives back button spacing */
+}
+
+#mainText {
+	margin: 5%; /* Gives text spacing */
 }
