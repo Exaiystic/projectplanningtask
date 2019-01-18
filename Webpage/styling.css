@@ -1,13 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway); /* Imports font for overlay */
+
 * {
-	margin: 0px;
-	padding: 0px;
+	margin: 0px; /* Sets the margin of everything to 0 by default */
+	padding: 0px; /* Sets the padding of everything to 0 by default */
 }
 
 body {
-	height: 100px;
-	font-family: segoe ui, segoe ui light, sans-serif;
-	font-size: 20px;
-	text-align: center;
+	height: 100%; /* Sets the body height to be 100% of the window size */
+	font-family: segoe ui, segoe ui light, sans-serif; /* Sets the default font */
+	font-size: 20px; /* Sets the default font size */
+	text-align: center; /* Sets the default text alignment */
+	margin: 0px; /* Sets the body to fill the entire window */
+	padding: 0px; /* Sets the body to fill the entire window */
+}
+
+#super-container {
+	position: relative; /* Positions container relative to normal position */
+}
+
+#bg-container {
+	/* Background creation and adjustment */
+	background-image: url("Photos/photog_img23.jpg");
+	filter: blur(8px);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	/* Container adjustment (includes background) */
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: -100;
+}
+
+#wrapper-container {
+	padding: 10% 0% 10% 0%; /* Distances wrapper from top of window (wrapper margin used for alignment) */
 }
 
 #wrapper {
@@ -15,7 +43,7 @@ body {
 	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
 	color: white; /* Colour of text in element */
 	border: 3px solid #f1f1f1; /* Border thickness/stroke type/colour */
-	max-width: 850px; /* Maximum width of the wrapper */
+	max-width: 800px; /* Maximum width of the wrapper */
 	width: 80%; /* Width of wrapper (if 80% of window size is not bigger than 850 pixels) */
 	margin: 0px auto; /* Centering the wrapper to the middle of the window */
 }
@@ -78,7 +106,35 @@ h1 {
     -webkit-transform: translate(-50%, -50%); /* Centers content */
     -moz-transform: translate(-50%, -50%); /* Centers content */
     transform: translate(-50%, -50%); /* Centers content */
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    -moz-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s; /* Transition speed of overlay text */
+    -moz-transition: all 0.3s ease-in-out 0s; /* Transition speed of overlay text */
+    transition: all 0.3s ease-in-out 0s; /* Transition speed of overlay text */
+}
+
+.content:hover .content-details {
+	top: 50%; /* Specifies that content starts 50% down from the top */
+	left: 50%; /* Specifies that content starts 50% right from the left */
+	opacity: 1; /* Makes contents visible */
+}
+
+.content-details h3 { /* Header for image overlay */
+	color: #fff; /* Sets content colour */
+    font-weight: 500; /* Sets thickness of font */
+	letter-spacing: 0.15em; /* Sets letter spacing to 15% of regular font size */
+	margin-bottom: 0.5em; /* Sets the space between bottom of element and element below to 50% of regular text size */
+	text-transform: uppercase; /* Forces header to be uppercase */
+}
+
+.content-details p {
+	color: #fff; /* Sets content colour */
+	font-size: 0.8em; /* Sets the font to 80% original size */
+	font-family: 'Raleway', sans-serif; /* Sets font of the overlay text */
+}
+
+.overlay-header {
+	font-family: 'Raleway', sans-serif; /* Sets font of overlay header (already set) */
+}
+
+.fadeIn-top {
+	top: 20%; /* Forces overlay to transition from the top of the button into the center */
 }
