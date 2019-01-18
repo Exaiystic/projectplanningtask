@@ -30,7 +30,7 @@ Styled and set up in universal theme.
 Added basic navbar.
 
 ### 18/01/2019
-Remade homepage and styling file:
+Remade all files:
 
 >Wrapper has it's own container two allow for alignment as well as vertical positioning
 
@@ -39,3 +39,7 @@ Remade homepage and styling file:
 >Comments added to all files
 
 >Previous issues with the homepage have all been fixed with this new format
+
+About page now has a back to homepage button.
+
+About page now has sample text.
