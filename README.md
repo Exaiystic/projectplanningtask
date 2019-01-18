@@ -30,4 +30,12 @@ Styled and set up in universal theme.
 Added basic navbar.
 
 ### 18/01/2019
-Adjusted wrapper and background positioning to temporarily fix top from being cut off.
+Remade homepage and styling file:
+
+Wrapper has it's own container two allow for alignment as well as vertical positioning
+
+Arranged wrapper and background image into a super container.
+
+Comments added to all files
+
+Previous issues with the homepage have all been fixed with this new format
