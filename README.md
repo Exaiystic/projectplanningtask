@@ -32,10 +32,10 @@ Added basic navbar.
 ### 18/01/2019
 Remade homepage and styling file:
 
-Wrapper has it's own container two allow for alignment as well as vertical positioning
+>Wrapper has it's own container two allow for alignment as well as vertical positioning
 
-Arranged wrapper and background image into a super container.
+>Arranged wrapper and background image into a super container.
 
-Comments added to all files
+>Comments added to all files
 
-Previous issues with the homepage have all been fixed with this new format
+>Previous issues with the homepage have all been fixed with this new format
