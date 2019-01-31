@@ -43,3 +43,6 @@ Remade all files:
 About page now has a back to homepage button.
 
 About page now has sample text.
+
+### 31/01/2019
+Made page backgrounds modular - easier to change per page.
