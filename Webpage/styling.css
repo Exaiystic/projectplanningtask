@@ -25,15 +25,22 @@ body {
 
 /***************************************************************************************/
 /* Background images */
-/* Background images have to be separated because each page has a different background */
+/* Background is modular because each page has a different background */
+/* To change the background of a specific page, change the .PAGENAME class background url */
 
-#bg-container-homepage {
-	/* Background adjustment and creation*/
+.homepage {
 	background-image: url("Photos/photog_img23.jpg"); /* Sets image in directory as background */
+}
+
+.aboutus {
+	background-image: url("Photos/photog_img28.jpg");
+}
+
+.bg-container {
+	/* Background adjustment and creation*/
 	filter: blur(10px); /* Blurs background by ten pixels */
 	background-repeat: no-repeat; /* Background will not repeat if not big enough */
 	background-size: cover; /* Background resized to cover window */
-	
 	/* Container adjustment (includes background) */
 	/* Forces element to stretch to full size of parent (style says it reaches all four edges of parent) */
 	position: absolute; /* Positions element based on parent's positioning */
@@ -43,20 +50,6 @@ body {
 	left: 0px;
 	z-index: -100; /* Sets the layer arrangement of layer to be at level -100 (below everything) */
 	transform: scale(1.1); /* Enlarges blurred image to get rid of edge of window glowing (due to the blur) */
-}
-
-#bg-container-aboutus {
-	background-image: url("Photos/photog_img28.jpg");
-	filter: blur(10px);
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	bottom: 0px;
-	left: 0px;
-	z-index: -100;
-	transform: scale(1.1);
 }
 
 /***************************************************************************************/
