@@ -63,6 +63,7 @@ body {
 	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
 	color: white; /* Colour of text in element */
 	border: 3px solid #f1f1f1; /* Border thickness/stroke type/colour */
+	min-height: 750px; /* Prevents the background from being cut at bottom of page */
 	max-width: 800px; /* Maximum width of the wrapper */
 	width: 80%; /* Width of wrapper (if 80% of window size is not bigger than 850 pixels) */
 	margin: 0px auto; /* Centering the wrapper to the middle of the window */
