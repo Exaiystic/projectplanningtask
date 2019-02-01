@@ -1,33 +1,70 @@
 <!DOCTYPE html>
-<!-- Laughton-en-le-Morthen Parish Council homepage. Made by Thomas Broughton -->
+<!-- Homepage -->
+
 <html>
-  <body>
-    <head>
-      <!--
-        Setting up the web page aesthetics by importing an external style sheet,
-        giving the web page tab a title, as well as adding resolution scalability 
-        for mobile screens, etc. 
-      -->
-	  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Noto+Sans|Open+Sans|PT+Sans|Roboto|Roboto+Condensed|Sarabun|Source+Sans+Pro|Staatliches" rel="stylesheet">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="styling.css"/>
-      <title>About Us</title>
-    </head>
+    <body>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="styling.css"/> <!-- Importing styling from external file -->
+            <title>About Us</title> <!-- Name of title shown in browser tab -->
+        </head>
 		
-    <div class="wrapper">
-      <h1 class="page-header">Laughton-en-le-Morthen</h1>
-	  <h2>About Us</h2>
-      <br>
-	  
-	  <p class="page-introduction">
-	    
-	  </p>
-	  
-    </div>
-	  
-	<div class="vignette-disable">
-	  <div class="bg-image"/>
-	</div>
-    		
-  </body>
+		<!-- Container for everything -->
+		<div id="super-container">
+		
+		    <!-- Container for the background -->
+			<div class="bg-container aboutus"></div>
+			
+			<!-- Container for the wrapper -->
+			<div id="wrapper-container">
+			
+			    <!-- Container which will hold all the main content -->
+				<div id="wrapper"> 
+					<h1>Laughten-en-le-Morthen</h1>
+					<h2>About Us</h2>
+					<p id="mainText">
+                        Laughten-en-le-Morthen Parish Council serves the village of Laughten-en-le-Morthen along with the hamlets of 
+						Brookhouse, Slade Hooton, Carr and Newhall. Laughten-en-le-Morthen is a small dormitory village and civil parish 
+						in the Metropolitan Borough of Rotherham, lying to the south of Rotherham, South Yorkshire. 
+						Laughten-en-le-Morthen is 130m above sea level and from it's western edge behind the church, you can enjoy unrivaled 
+						views towards Sheffield and beyond to the Pennines. 
+				    </p>
+					<p> 
+					    The main attraction and focal point of the village is the All 
+						Saints' church with it's spire which soars to 185 feet. On a clear day from the top of the church tower you can see: 
+						the Humber Bridge; the power stations on the River Trent; the wind farm at Holmfirth and Lincoln Cathedral. Guided 
+						visits up the tower can be booked by calling Laughton Bell Ringers - 01909 561886 / 07725 640475.
+					</p>
+					<h4 class="rightAlignText smallHeader">
+					    The Parish Council consists of seven voluntary councillors and a part-time clerk:
+					</h4>
+					<p class="rightAlignText">
+					    Chairperson: Councilor Trevor Stanway <br>
+						Tel: 01909 563418 <br>
+						Email: t.stanway@laughtonparishcouncil.org.uk
+					</p>
+					<p class="rightAlignText">
+					    Vice-Chair: Councilor Gregory Price <br>
+						Tel: 01909 282432 <br>
+						Email: g.price@laughtonparishcouncil.org.uk
+					</p>
+					
+					<div id="backButton">
+                        <div class="content"><a href="Homepage.html"> <!-- Container for button image/overlay effect -->
+							<div class="content-overlay"></div> <!-- Overlay effect (see styling)-->
+							<img class="content-image" src="Photos/photog_img23.jpg" style="width: 100%"></img> <!-- Button image -->
+							<div class="content-details fadeIn-top"> <!-- Container for overlay content -->
+								<h3>Home</h3> <!-- Overlay header -->
+								<p>Return to the homepage</p> <!-- Overlay text -->
+							</div>
+						</div></a>
+					</div>
+				</div>
+			</div>
+			
+		    
+			
+		</div>
+	
+    </body>
 </html>

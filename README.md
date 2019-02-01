@@ -30,4 +30,28 @@ Styled and set up in universal theme.
 Added basic navbar.
 
 ### 18/01/2019
-Adjusted wrapper and background positioning to temporarily fix top from being cut off.
+Remade all files:
+
+>Wrapper has it's own container two allow for alignment as well as vertical positioning
+
+>Arranged wrapper and background image into a super container.
+
+>Comments added to all files
+
+>Previous issues with the homepage have all been fixed with this new format
+
+About page now has a back to homepage button.
+
+About page now has sample text.
+
+### 31/01/2019
+Made page backgrounds modular - easier to change per page.
+
+Added wrapper min-height to prevent background from being cut.
+
+### 01/02/2019
+Added comments to modular background classes.
+
+Added initial paragraph to about us page.
+
+Starting adding details about the councellors onto the about us page.
