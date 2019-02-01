@@ -48,3 +48,16 @@ About page now has sample text.
 Made page backgrounds modular - easier to change per page.
 
 Added wrapper min-height to prevent background from being cut.
+
+### 01/02/2019
+Added comments to modular background classes.
+
+Added initial paragraph to about us page.
+
+Starting adding details about the councellors onto the about us page.
+
+Created photo gallery page.
+
+Added photo gallery button to homepage.
+
+Swapped photo gallery and news and events images around.
