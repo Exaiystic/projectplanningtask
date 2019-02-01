@@ -167,3 +167,12 @@ h1 {
 #mainText {
 	margin: 5%; /* Gives text spacing */
 }
+
+.rightAlignText {
+	text-align: left; /* Aligns text to the left side of element */
+	padding: 2%; /* Spaces paragraphs */
+}
+
+.smallHeader {
+	margin-top: 2% /* Spaces the header from text above */
+}
