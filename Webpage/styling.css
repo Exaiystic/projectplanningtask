@@ -36,6 +36,10 @@ body {
 	background-image: url("Photos/photog_img28.jpg"); /* Sets image in directory as background */
 }
 
+.photogallery {
+	background-image: url("Photos/photog_img25.jpg") /* Sets image in directory as background */
+}
+
 .bg-container {
 	/* Background adjustment and creation*/
 	filter: blur(10px); /* Blurs background by ten pixels */
