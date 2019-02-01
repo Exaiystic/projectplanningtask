@@ -51,3 +51,5 @@ Added wrapper min-height to prevent background from being cut.
 
 ### 01/02/2019
 Added comments to modular background classes.
+
+Started to add initial paragraph on the about us page.
