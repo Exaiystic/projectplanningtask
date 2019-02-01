@@ -53,3 +53,5 @@ Added wrapper min-height to prevent background from being cut.
 Added comments to modular background classes.
 
 Added initial paragraph to about us page.
+
+Starting adding details about the councellors onto the about us page.
