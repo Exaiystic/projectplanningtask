@@ -33,7 +33,7 @@ body {
 }
 
 .aboutus {
-	background-image: url("Photos/photog_img28.jpg");
+	background-image: url("Photos/photog_img28.jpg"); /* Sets image in directory as background */
 }
 
 .bg-container {
