@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Photo Gallery -->
+
+<html>
+    <body>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="styling.css"/> <!-- Importing styling from external file -->
+            <title>Photo Gallery</title> <!-- Name of title shown in browser tab -->
+        </head>
+		
+		<!-- Container for everything -->
+		<div id="super-container">
+		
+		    <!-- Container for the background -->
+			<div class="bg-container photogallery"></div>
+			
+			<!-- Container for the wrapper -->
+			<div id="wrapper-container">
+			
+			    <!-- Container which will hold all the main content -->
+				<div id="wrapper">
+					<h1>Laughten-en-le-Morthen</h1>
+					<h2>Photo Gallery</h2>
+					
+					<div class="galleryContainer">
+					    <div class="row">
+						    <div class="column">
+								<div class="galleryImage">
+									<img class="content-image" src="Photos/photog_img25.jpg"></img>
+									<p>Sunset over Laughton-en-le-Morthen</p>
+								</div>
+							</div>
+							
+							<div class="column">
+								<div class="galleryImage">
+									<img class="content-image" src="Photos/photog_img1.jpg"></img>
+									<p>Village entry sign<p>
+								</div>
+							</div>
+							
+							<div class="column">
+								<div class="galleryImage">
+									<img class="content-image" src="Photos/photog_img2.jpg"></img>
+									<p>Village entry sign<p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="column">
+								<div class="galleryImage">
+									<img class="content-image" src="Photos/photog_img3.jpg"></img>
+									<p>All Saints' Church<p>
+								</div>
+							</div>
+							
+							<div class="column">
+								<div class="galleryImage">
+									<img class="content-image" src="Photos/photog_img4.jpg"></img>
+									<p>Oldest school in South Yorkshire (400 years old)<p>
+								</div>
+							</div>
+							
+							<div class="column">
+								<div class="galleryImage">
+									<img class="content-image" src="Photos/photog_img5.jpg"></img>
+									<p>Looking towards Laughton from Carr Lane, Carr<p>
+								</div>
+							</div>
+						</div>
+                    </div>
+	  
+					<div id="backButton">
+                            <div class="content"><a href="Homepage.html"> <!-- Container for button image/overlay effect -->
+							<div class="content-overlay"></div> <!-- Overlay effect (see styling)-->
+							<img class="content-image" src="Photos/photog_img23.jpg" style="width: 100%"></img> <!-- Button image -->
+							<div class="content-details fadeIn-top"> <!-- Container for overlay content -->
+								<h3>Home</h3> <!-- Overlay header -->
+								<p>Return to the homepage</p> <!-- Overlay text -->
+							</div>
+						</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
