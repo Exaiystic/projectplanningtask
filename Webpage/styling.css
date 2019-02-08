@@ -180,3 +180,8 @@ h1 {
 .smallHeader {
 	margin-top: 2% /* Spaces the header from text above */
 }
+
+.galleryContainer {
+	width: 95%;
+	margin: 0 auto;
+}
