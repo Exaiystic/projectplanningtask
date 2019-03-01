@@ -209,7 +209,7 @@ h1 {
 	margin: 0 auto; /* Centers the container within flex boundaries */
 }
 
-.galleryImage p {
+.galleryImage p, .imageCaption {
 	margin-top: 0px; /* Removes the top margin from paragraphs within the container */
 	border-bottom: 1px solid white; /* Adding a border around the text without the top */
 	border-left: 1px solid white;
