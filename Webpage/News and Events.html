@@ -36,25 +36,35 @@
 						free by clicking here and following the on-screen prompts.
 					</p>
 				</div>
-					
+				
+                <!-- Container which will hold all the main content -->				
 				<div id="wrapper">
+				    <h2>News</h2>
+					
+				    <!-- Container for the table -->
 					<div class="tableContainer">
-					    <table id="newsEventsTable">
+						 
+					    <!-- Table -->
+						<!-- A cell in the table is made up of either a table header or table data -->
+					    <table class="newsEventsTable">
+						
+						    <!-- Table Head -->
 						    <thead class="tableHeader">
-							    <tr>
-								    <th class="tableDate">Date Added</th>
+							    <tr> <!-- Table Row -->
+								    <th class="tableDate">Date Added</th> <!-- Table Header, has innate bold text -->
 									<th class="tableTitle">Title</th>
 									<th class="tableDescription">Description</th>
 									<th class="tableLink">Link to File</th>
 								</tr>
 							</thead>
 							
+							<!-- Table Body -->
 							<tbody class="tableBody">
-							    <tr class="tableRow dark">
-								    <td class="tableDate">23-05-2018</td>
+							    <tr class="tableRow dark"> <!-- Dark class adds a darker background to separate columns -->
+								    <td class="tableDate">23-05-2018</td> <!-- Table Data -->
 								    <th class="tableTitle">Privacy Policy</th>
 									<td class="tableDescription">Please see attached Laughton-en-le-Morthen Parish Council General Privacy Policy</td>
-									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td>
+									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td> <!-- Add href="FILE LOCATION/FILENAME.FILETYPE" to the <a> tag -->
 								</tr>
 								
 								<tr class="tableRow">
@@ -91,10 +101,87 @@
 									<td class="tableDescription"></td>
 									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td>
 								</tr>
+								
+								<tr class="tableRow dark">
+								    <td class="tableDate">16-05-2016</td>
+									<th class="tableTitle">Newsletter - Issue 29</th>
+									<td class="tableDescription">Newsletter for Parish May</td>
+									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td>
+								</tr>
+								
+								<tr class="tableRow">
+								    <td class="tableDate">08-01-2016</td>
+									<th class="tableTitle">Newsletter - Issue 28</th>
+									<td class="tableDescription">Parish Newsletter - November 2015</td>
+									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td>
+								</tr>
+								
+								<tr class="tableRow dark">
+								    <td class="tableDate">07-07-2015</td>
+									<th class="tableTitle">Newsletter - Issue 27</th>
+									<td class="tableDescription">Newsletter - Issue 27</td>
+									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td>
+								</tr>
+								
+								<tr class="tableRow">
+								    <td class="tableDate">18-06-15</td>
+									<th class="tableTitle">Recording of Meetings</th>
+									<td class="tableDescription">Recording of Meetings</td>
+									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td>
+								</tr>
+								
+								<tr class="tableRow dark">
+								    <td class="tableDate">23-04-2015</td>
+									<th class="tableTitle">Notice of Uncontested Election</th>
+									<td class="tableDescription">Notice of Uncontested Election</td>
+									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
-					
+				</div>
+
+                <div id="wrapper">		
+                    <h2>Events</h2>
+				
+				    <div class="tableContainer">
+					    <table class="newsEventsTable">
+						    <thead class="tableHeader dark">
+								    <th class="tableDate">Date Added</th>
+									<th class="tableTitle">Title</th>
+									<th class="tableDescription">Description</th>
+									<th class="tableLink">Link to File</th>
+								</tr>
+							</thead>
+							
+							<tbody>
+								<tr class="tableRow">
+									<td class="tableDate">23-03-2016</td>
+									<th class="tableTitle">Laughton All Saints' Church Take-Out Evening</th>
+									<td class="tableDescription">
+									    Come to Laughton All Saints' Church the first Friday of every month and join in 
+										with a <b>Takeout Night.</b> It is a social family night and we select a take 
+										away meal and share costs accordingly. We have different activities such as games, 
+										board games and quizzes; the activities will hopefully appeal to all ages. We 
+										sometimes have entertainment. It is a flexible evening and if you have any requests 
+										for future activities it would be great to include them.
+									</td>
+									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td>
+								</tr>
+									
+								<tr class="tableRow dark">
+									<td class="tableDate">23-03-2016</td>
+									<th class="tableTitle">Laughton All Saints' Church Family Service</th>
+									<td class="tableDescription">
+										Laughton All Saints' Church Family Service is on 
+										the Third Sunday in Every Month
+									</td>
+									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				
 					<div id="backButton">
                             <div class="content"><a href="Homepage.html"> <!-- Container for button image/overlay effect -->
 							<div class="content-overlay"></div> <!-- Overlay effect (see styling)-->
