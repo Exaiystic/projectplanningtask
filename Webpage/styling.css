@@ -40,6 +40,10 @@ body {
 	background-image: url("Photos/photog_img25.jpg") /* Sets image in directory as background */
 }
 
+.newsandevents {
+	background-image: url("Photos/hisp_img8.jpg") /* Sets image in directory as background */
+}
+
 .bg-container {
 	/* Background adjustment and creation*/
 	/* Background adjustment and creation*/
@@ -69,9 +73,9 @@ body {
 	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
 	color: white; /* Colour of text in element */
 	border: 3px solid #f1f1f1; /* Border thickness/stroke type/colour */
-	min-height: 750px; /* Prevents the background from being cut at bottom of page */
-	max-width: 800px; /* Maximum width of the wrapper */
-	width: 80%; /* Width of wrapper (if 80% of window size is not bigger than 850 pixels) */
+	/* min-height: 750px; /* May prevent the background from being cut at bottom of page */
+	/* max-width: 800px; /* Maximum width of the wrapper */
+	width: 80%; /* Width of wrapper set to be 80% of window size */
 	margin: 0px auto 25px; /* Centering the wrapper to the middle of the window */
 }
 
@@ -187,4 +191,9 @@ h1 {
 .galleryContainer {
 	width: 95%;
 	margin: 0 auto;
+}
+
+.tableContainer {
+	margin: 25px;
+	font-size: 15px;
 }
