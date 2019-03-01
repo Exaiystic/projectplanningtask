@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway); /* Imports font for overlay */
 
+/* Padding adds distance between border and content */
+/* Margin adds distance between the two elements */
+/* Padding and margin goes in order top, right, bottom, left */
+/* CONTENT --> PADDING --> BORDER --> MARGIN */
+
 * {
 /* Setting the default margin and padding to 0 (no space between anything unless specified) */
 	margin: 0px;
@@ -27,6 +32,13 @@ body {
 /* Background images */
 /* Background is modular because each page has a different background */
 /* To change the background of a specific page, change the .PAGENAME class background url */
+/* If you want to use a photo already in the Photos folder, change the name of the image; don't forget to put the file type */
+/* To use a photo that isn't in the folder. Add the image to the folder and then change the image name */
+/* The background image line should look like this: */
+/* .PAGENAME { */
+/*      background-image: url("Photos/IMAGE NAME.FILETYPE"); */
+/*  }	*/
+
 
 .homepage {
 	background-image: url("Photos/photog_img23.jpg"); /* Sets image in directory as background */
@@ -189,11 +201,42 @@ h1 {
 }
 
 .galleryContainer {
-	width: 95%;
-	margin: 0 auto;
+	width: 95%; /* Sets everything within the container to be 95% of the container's full size */
+	margin: 0 auto; /* Centers the container within flex boundaries */
+}
+
+.galleryImage p {
+	margin-top: 0px; /* Removes the top margin from paragraphs within the container */
+	border-bottom: 1px solid white; /* Adding a border around the text without the top */
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	padding: 5px; /* Adds distance between the text and the border */
 }
 
 .tableContainer {
 	margin: 25px;
+	padding: 15px;
 	font-size: 15px;
+	table-layout: fixed;
+	border: 1px solid white;
+}
+
+.tableDate {
+	width: 100px;
+}
+
+.tableDescription {
+	width: 350px;
+}
+
+.tableLink {
+	width:250px;
+}
+
+th, td {
+	height: 50px;
+}
+
+p {
+	margin: 25px;
 }
