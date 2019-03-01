@@ -223,6 +223,7 @@ h1 {
 
 .tableDate {
 	width: 100px;
+	padding: 5px;
 }
 
 .tableDescription {
@@ -231,6 +232,10 @@ h1 {
 
 .tableLink {
 	width:250px;
+}
+
+.dark {
+	background: rgba(0,0,0,0.25); /* Sets background to opaque black */
 }
 
 th, td {
