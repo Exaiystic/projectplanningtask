@@ -57,7 +57,11 @@ body {
 }
 
 .history {
-	background-image: url("Photos/hisp_img9.jpg") /* Sets image in directory as background */
+	background-image: url("Photos/photog_img10.jpg") /* Sets image in directory as background */
+}
+
+.hallandallotments {
+    background-image: url("Photos/photog_img21.jpg") /* Sets image in directory as background */
 }
 
 .bg-container {
@@ -66,6 +70,7 @@ body {
 	filter: blur(10px); /* Blurs background by ten pixels */
 	background-repeat: no-repeat; /* Background will not repeat if not big enough */
 	background-size: cover; /* Background resized to cover window */
+	background-position: center;
 	/* Container adjustment (includes background) */
 	/* Forces element to stretch to full size of parent (style says it reaches all four edges of parent) */
 	position: absolute; /* Positions element based on parent's positioning */
