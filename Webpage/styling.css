@@ -228,6 +228,7 @@ h1 {
 	font-size: 15px;
 	table-layout: fixed;
 	border: 1px solid white;
+	text-align: center;
 }
 
 .tableDate {
@@ -253,4 +254,12 @@ th, td {
 
 p {
 	margin: 25px;
+}
+
+.tableDay {
+    width: 200px;
+}
+
+.tableEvents {
+    width: 500px;
 }
