@@ -44,12 +44,20 @@ body {
 	background-image: url("Photos/photog_img23.jpg"); /* Sets image in directory as background */
 }
 
+.contactus {
+    background-image: url("Photos/photog_img24.jpg") /* Sets image in directory as background */
+}
+
 .aboutus {
 	background-image: url("Photos/photog_img28.jpg"); /* Sets image in directory as background */
 }
 
 .photogallery {
 	background-image: url("Photos/photog_img25.jpg") /* Sets image in directory as background */
+}
+
+.meetingminutes {
+	background-image: url("Photos/brookhouse_img5.jpg") /* Sets image in directory as background */
 }
 
 .newsandevents {
