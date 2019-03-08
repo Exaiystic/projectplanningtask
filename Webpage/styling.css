@@ -78,7 +78,11 @@ body {
 	filter: blur(10px); /* Blurs background by ten pixels */
 	background-repeat: no-repeat; /* Background will not repeat if not big enough */
 	background-size: cover; /* Background resized to cover window */
-	background-position: center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-position: center; /* Centers background */
+	background-attachment: fixed; /* Does not scroll with the rest of webpage */
 	/* Container adjustment (includes background) */
 	/* Forces element to stretch to full size of parent (style says it reaches all four edges of parent) */
 	position: absolute; /* Positions element based on parent's positioning */
@@ -87,8 +91,6 @@ body {
 	bottom: 0px;
 	left: 0px;
 	z-index: -100; /* Sets the layer arrangement of layer to be at level -100 (below everything) */
-	transform: scale(1.1); /* Enlarges blurred image to get rid of edge of window glowing (due to the blur) */
-	
 }
 
 /***************************************************************************************/
