@@ -74,7 +74,6 @@ body {
 
 .bg-container {
 	/* Background adjustment and creation*/
-	/* Background adjustment and creation*/
 	filter: blur(10px); /* Blurs background by ten pixels */
 	background-repeat: no-repeat; /* Background will not repeat if not big enough */
 	background-size: cover; /* Background resized to cover window */
@@ -112,7 +111,7 @@ table {
 	margin: 0 auto; /* Centers the table within container */
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) { /* Every other table row */
 	background: rgba(0,0,0,0.25); /* Sets background to opaque black */
 }
 
@@ -129,8 +128,6 @@ thead {
 	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
 	color: white; /* Colour of text in element */
 	border: 3px solid #f1f1f1; /* Border thickness/stroke type/colour */
-	/* min-height: 750px; /* May prevent the background from being cut at bottom of page */
-	/* max-width: 800px; /* Maximum width of the wrapper */
 	width: 80%; /* Width of wrapper set to be 80% of window size */
 	margin: 0px auto 25px; /* Centering the wrapper to the middle of the window */
 }
