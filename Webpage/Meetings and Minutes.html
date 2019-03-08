@@ -7,7 +7,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" type="text/css" href="styling.css"/> <!-- Importing styling from external file -->
             <title>Meetings and Minutes</title> <!-- Name of title shown in browser tab -->
-        </head>
+		</head>
 		
 		<!-- Container for everything -->
 		<div id="super-container">
@@ -39,7 +39,7 @@
 						 
 					    <!-- Table -->
 						<!-- A cell in the table is made up of either a table header or table data -->
-					    <table class="newsEventsTable">
+					    <table id="meetingMinuteTable">
 						
 						    <!-- Table Head -->
 						    <thead class="tableHeader">
@@ -52,7 +52,7 @@
 							
 							<!-- Table Body -->
 							<tbody class="tableBody">
-							    <tr class="tableRow "> <!-- Dark class adds a darker background to separate columns -->
+							    <tr class="tableRow "> <!-- Dark class made redundant -->
 								    <td class="tableDate">17-10-2018</td> <!-- Table Data -->
 								    <th></th>
 									<td class="tableLink">Click <a>here</a> to read more and download this news article.</td> <!-- Add href="FILE LOCATION/FILENAME.FILETYPE" to the <a> tag -->

@@ -93,6 +93,31 @@ body {
 
 /***************************************************************************************/
 
+h1 {
+	text-align: center; /* Centers header text */
+	font-weight: bold; /* Makes header text bold */
+}
+
+th, td {
+	height: 50px; /* Default height of cells, overwritten with classes and ids */
+}
+
+p {
+	margin: 25px; /* Default space between paragraphs, overwritten with classes and ids */
+}
+
+table {
+	margin: 0 auto; /* Centers the table within container */
+}
+
+tr:nth-child(even) {
+	background: rgba(0,0,0,0.25); /* Sets background to opaque black */
+}
+
+thead {
+	background: rgba(0,0,0,0.25); /* Sets background to opaque black */
+}
+
 #wrapper-container {
 	padding: 10% 0% 10% 0%; /* Distances wrapper from top of window (wrapper margin used for alignment) */
 }
@@ -108,9 +133,17 @@ body {
 	margin: 0px auto 25px; /* Centering the wrapper to the middle of the window */
 }
 
-h1 {
-	text-align: center; /* Centers header text */
-	font-weight: bold; /* Makes header text bold */
+#backButton {
+	margin: 5%; /* Gives back button spacing */
+}
+
+#mainText {
+	margin: 5%; /* Gives text spacing */
+}
+
+#rightAlignContainer p{
+	text-align: left; /* Aligns text to the left side of element */
+	padding: 2%; /* Spaces paragraphs */
 }
 
 .row {
@@ -200,19 +233,6 @@ h1 {
 	top: 20%; /* Forces overlay to transition from the top of the button into the center */
 }
 
-#backButton {
-	margin: 5%; /* Gives back button spacing */
-}
-
-#mainText {
-	margin: 5%; /* Gives text spacing */
-}
-
-#rightAlignContainer p{
-	text-align: left; /* Aligns text to the left side of element */
-	padding: 2%; /* Spaces paragraphs */
-}
-
 .smallHeader {
 	margin-top: 2% /* Spaces the header from text above */
 }
@@ -252,26 +272,10 @@ h1 {
 	width:250px; /* Sets the width of classes cells */
 }
 
-.dark {
-	background: rgba(0,0,0,0.25); /* Sets background to opaque black */
-}
-
-th, td {
-	height: 50px; /* Default height of cells, overwritten with classes and ids */
-}
-
-p {
-	margin: 25px; /* Default space between paragraphs, overwritten with classes and ids */
-}
-
 .tableDay {
     width: 200px; /* Sets the width of classes cells */
 }
 
 .tableEvents {
     width: 700px; /* Sets the width of classes cells */
-}
-
-table {
-	margin: 0 auto; /* Centers the table within container */
 }
